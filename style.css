@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  font-weight: bolder;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #303346;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  color: white;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.disc {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+.disc h3 {
+  margin-top: 110px;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  /* margin-top:160px; */
+}
+.img_upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img_result {
+  margin: 10px 0; 
+
+   object-fit: scale-down;
+}
+
+.bg_img {
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.bg_img img {
+  width: 1706px;
+}
+
+label {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.submit {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+#result {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+#result img {
+  height: 300px;
+  padding: 5px;
+}
+
+#files {
+  margin-left: 70px;
+}
+
+/* second_img */
+.img img {
+  height: 300px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+#input {
+  padding: 2px 4px;
+  color: white;
+  background-color: #303346;
+  font-size: 15px;
+  height: 30px;
+}
+
+#display-image {
+  width: 300px;
+  margin-top: 10px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}

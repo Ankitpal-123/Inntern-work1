@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background_Varification</title>
+    <!-- adding responsive.css -->
+    <link rel="stylesheet" href="resposive.css" />
+
+    <!-- adding style.css -->
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <nav>
+      <h1>This is Background Verification Process Site</h1>
+    </nav>
+    <div class="disc">
+      <h3>Select multiple files</h3>
+    </div>
+
+    <div class="container">
+      <!-- first image -->
+      <div class="img_upload">
+        <div class="img_input">
+          <input
+            id="files"
+            type="file"
+            multiple="multiple"
+            accept="image/jpeg, image/png, image/jpg"
+          />
+        </div>
+
+        <div class="img_result">
+          <output id="result" />
+        </div>
+      </div>
+
+      <!-- Second img -->
+      <div class="img_upload">
+        <input
+          type="file"
+          id="select_image"
+          name="image"
+          onchange="putImage()"
+        />
+        <div class="img">
+          <img id="target" />
+        </div>
+      </div>
+
+      <!-- Third img -->
+      <div class="third">
+        <input
+          type="file"
+          id="image-input"
+          accept="image/jpeg, image/png, image/jpg"
+        />
+
+        <div id="display-image"></div>
+      </div>
+    </div>
+    <!-- Submit button -->
+    <div class="submit">
+      <div class="submit">
+        <input id="input" type="button" value="Submit" onclick="fun();" />
+      </div>
+    </div>
+
+    <!-- background_img -->
+    <div class="bg_img">
+      <img
+        src="https://www.millow.io/images/Background-Verification-Process-in-MNCs.jpeg"
+        alt=""
+      />
+    </div>
+
+    <script src="style.js"></script>
+  </body>
+</html>
